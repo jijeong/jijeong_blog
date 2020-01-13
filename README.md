@@ -1,129 +1,48 @@
-# Tale
+# Scriptor
 
-[![Gem Version](https://badge.fury.io/rb/tale.svg)](https://badge.fury.io/rb/tale)
+Scriptor is a simple, minimal, clean & responsive Jekyll theme for writers.
 
-Tale is a minimal Jekyll theme curated for storytellers. Checkout the demo [here](https://chesterhow.github.io/tale/).
+[Live Demo](https://scriptor-jekyll.netlify.com/) &nbsp; | &nbsp; [Download](https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme/archive/master.zip) &nbsp;
 
-![Tale screenshot](http://i.imgur.com/pXZrtmo.png)
+![Scriptor-Jekyll-Theme](images/scriptor-jekyll.png)
 
 ## Features
-- Easy installation
-- Compatible with GitHub Pages
-- Responsive design (looks just as good on mobile)
-- Syntax highlighting, with the help of Pygments
-- Markdown and HTML text formatting
-- Pagination of posts
-- [Disqus comments (can be enabled if needed)](#enabling-comments)
 
-## Installation
-There are 3 ways to install this theme
++ Responsive design
++ Archive organized by [tags](https://scriptor-jekyll.netlify.com/tags/)
++ Disqus Comments
++ Accent color options
++ [Prism](https://prismjs.com/) syntax highlighter
++ Stackbit [Uniform support](https://docs.stackbit.com/uniform/)
 
-1. Install it as a Ruby Gem (for self-hosted sites)
-2. Install it with the `jekyll-remote-theme` plugin (for GitHub Pages hosted sites)
-3. Fork the project directly
+## Deployment
 
-### Ruby Gem method
-1. Add this line to your `Gemfile`:
+### Stackbit Deploy
 
-```ruby
-gem "tale"
-```
+This theme contains a `stackbit.yaml` file and can be used with [Stackbit](https://www.stackbit.com/) to instantly deploy to Netlify with optional headless CMS (Contentful, DatoCMS, Forestry, NetlifyCMS, etc.). 
 
-2. Install the theme's gems and dependencies:
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme)
 
-```bash
-$ bundle
-```
+### Local Instalation
 
-3. In `_config.yml` add these lines:
+To set up Jekyll on local machine please follow the official documentation that can be found here -> https://jekyllrb.com/docs/.
 
-```yaml
-theme:      tale
+To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `bundle exec jekyll serve` to start the Jekyll server.
 
-permalink:  /:year-:month-:day/:title
-paginate:   5
-```
+### Manual Deployment
 
-Remove any other `theme:` lines.
+Jekyll generates your static site to the **_site** directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live.
 
-4. Rename `index.md` to `index.html`. Without this, the `jekyll-paginate` gem will not work.
+### Netlify
 
-5. In `about.md`, change the `layout:` field to `post`:
+This theme is prepared to be hosted on [Netlify](https://www.netlify.com/). All you need to do is create a new private repository on GitHub or GitLab. Upload the theme to the repository and link your repo to Netlify. Please check [this link](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/#step-2-link-to-your-github) with the step by step guidelines.
 
-```Markdown
-layout: post
-```
+### Amazon S3
 
-### GitHub Pages method
-1. Add these 2 lines in to your `Gemfile`:
+If you want to host your site on Amazon S3, you can do so by using the [s3_website application](https://github.com/laurilehmijoki/s3_website). It will push your site to Amazon S3 where it can be served like any web server, dynamically scaling to almost unlimited traffic.
 
-```ruby
-gem "jekyll-remote-theme"
-gem "jekyll-paginate"
-```
+Also, please check the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
 
-2. Install the newly added gems:
+## Licenses
 
-```bash
-$ bundle
-```
-
-3. In `_config.yml` add these lines:
-
-```yaml
-remote_theme: chesterhow/tale
-
-permalink:    /:year-:month-:day/:title
-paginate:     5
-
-plugins:
-  - jekyll-paginate
-  - jekyll-remote-theme
-```
-
-Remove any other `theme:` or `remote_theme:` lines.
-
-4. Rename `index.md` to `index.html`. Without this, the `jekyll-paginate` gem will not work.
-
-5. In `about.md`, change the `layout:` field to `post`:
-
-```Markdown
-layout: post
-```
-
-### Fork method
-1. Fork this repository
-
-2. Delete the unnecessary files/folders: `CODE_OF_CONDUCT.md`, `LICENSE`, `README.md`, `tale.gemspec`
-
-3. Delete the `baseurl` line in `_config.yml`:
-
-```yaml
-baseurl:  "/tale"   # delete this line
-```
-
-## Usage
-Once you've installed the theme, you're ready to work on your Jekyll site. To start off, I would recommend updating `_config.yml` with your site's details.
-
-To build and serve your site, run:
-
-```bash
-$ bundle exec jekyll serve
-```
-
-And you're all set! Head over to http://127.0.0.1:4000/ to see your site in action.
-
-### Enabling Comments
-Comments are disabled by default. To enable them, look for the following line in `_config.yml` and change `jekyll-tale` to your site's Disqus id.
-
-```yml
-disqus: jekyll-tale
-```
-
-Next, add `comments: true` to the YAML front matter of the posts which you would like to enable comments for.
-
-## Contributing
-Found a bug or have a suggestion? Feel free to create an issue or make a pull request!
-
-## License
-See [LICENSE](https://github.com/chesterhow/tale/blob/master/LICENSE)
+All files and directories are licensed under the [MIT](https://opensource.org/licenses/mit-license.php) unless explicitly stated.

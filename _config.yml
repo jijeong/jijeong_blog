@@ -1,41 +1,68 @@
-# Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Google Analytics
-google_analytics: UA—XXXXXXXX-X
+# Site language
+lang: en-US
 
-# Author
-author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+# Site title
+title: "Scriptor"
 
-# Build settings
-markdown:       kramdown
-include:
-  - _pages
+# A description of your site for meta tag, search engine results.
+description: "Scriptor is a minimal, clean, modern & responsive Jekyll theme for writers"
 
-# Assets
-sass:
-  sass_dir:     _sass
-  style:        compressed
+# The subpath of your site, e.g. /blog, for generating urls.
+baseurl: ""
 
-# Gems
+# The base hostname & protocol of your site for where absolute urls are needed.
+url: "https://scriptor-jekyll.netlify.com"
+
+# Favicon
+favicon: images/favicon.png
+
+# Site navigation - each item must have a title and a url.
+navigation:
+  - text: Home
+    url: /
+  - text: About
+    url: /about/
+  - text: Style Guide
+    url: /style-guide/
+  - text: Tags
+    url: /tags/
+  - text: Download
+    url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
+
+# The shortname for your Disqus site to enable comments.
+disqus: justgoodthemes
+
+# Colors
+accent_color: '#2d72d9'
+
+# Site footer
+footer:
+  content: "&copy; Scriptor all rights reserved. Theme by [JustGoodThemes](https://www.justgoodthemes.com)."
+  has_social: true
+
+# Plugins
 plugins:
-  - jekyll-feed
   - jekyll-paginate
-  - jekyll-seo-tag
-  # - jemoji #Uncomment this to allow emoji in your post
+
+# http://jekyllrb.com/docs/pagination/
+paginate: 3
+paginate_path: '/page:num/'
+
 
 # Permalinks
-permalink:      /:year-:month-:day/:title
-paginate:       5
+permalink: /:title
 
-# Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+# Conversion
+markdown: kramdown
 
-# Disqus (Set to your disqus id)
-disqus:         jekyll-tale
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
