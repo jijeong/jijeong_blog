@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /style-guide/
 title: Style Guide
 description: This is a style guide of the Scriptor Jekyll theme
 ---
@@ -55,9 +56,9 @@ Lorem ipsum dolor sit amet, `consectetuer adipiscing` elit. Morbi commodo, ipsum
 ## Code Blocks
 
 ```css
-#header h1 { 
+#header h1 {
   color: #fff;
-  margin-bottom: 1.5em; 
+  margin-bottom: 1.5em;
 }
 
 .author-avatar {
@@ -104,7 +105,7 @@ sass:
 ```
 
 ```
-No language indicated, so no syntax highlighting. 
+No language indicated, so no syntax highlighting.
 ```
 
 Inline `code` has `back-ticks around` it.
